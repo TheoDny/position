@@ -1,0 +1,11 @@
+#display {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#display :first-child {
+  align-self: center;
+}
+

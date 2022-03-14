@@ -1,0 +1,18 @@
+<div class="row" id="login">
+  <div class="col-sm-8 col-smoffset-2">
+    <h2>Login</h2>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+        <label>Email :
+          <input id="email" type="text" formControlName="email" class="form-control">
+        </label>
+        <label>Password :
+          <input id="password" type="password" formControlName="password" class="form-control">
+        </label>
+        <br/>
+        <button class="btn btn-primary" type="submit" id="submit-signup" disabled="true" [disabled]="loginForm.invalid">
+          Connect
+        </button>
+      </form>
+      <p class="text-danger">{{ errorMessage }}</p>
+  </div>
+</div>

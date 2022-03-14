@@ -1,0 +1,15 @@
+<div id="modif">
+  <div id="editor">
+    <app-control-panel></app-control-panel>
+    <div id="save-and-clear">
+      <button type="button" class="btn" (click)="this.setPositionToServer()">Sauvegarder</button>
+      <button type="button" class="btn" (click)="this.clearPosition()">Supprimer</button>
+    </div>
+    <h2 class='disableSelection'>{{ this.context.toString() }} / rotation : {{ this.rotation }}</h2>
+    <p *ngIf="this.message!=''" role="alert" class="alert alert-success">{{ this.message }}</p>
+    <p  *ngIf="this.errorMessage!=''" role="alert" class="alert alert-danger">{{ this.errorMessage }}</p>
+  </div>
+  <app-legende-terrain></app-legende-terrain>
+  <app-terrain></app-terrain>
+</div>
+

@@ -1,0 +1,38 @@
+#legende {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-top:10px;
+  li{
+    display: flex;
+    flex-direction: row;
+    ;
+
+    &::marker{
+      content:"";
+    }
+    div{
+      width:30px;
+      height:30px;
+      border-radius: 40%;
+      border: solid 1px #ccc;
+    }
+    p{
+      color:#fff;
+      font-weight: bold;
+      &::before{
+        content:"\00a0";
+      }
+    }
+  }
+}
+
+@media (max-width:500px){
+  #legende {
+    flex-direction: row;
+    flex-wrap: wrap;
+    li{
+      margin-left:15px ;
+    }
+  }
+}

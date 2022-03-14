@@ -1,0 +1,7 @@
+<div id="control-panel-systeme">
+    <button type="button" class="btn" [ngClass]="{'active': this.context!.toString() == 'reception'}"  (click)="this.getReception()">Réception</button>
+    <button type="button" class="btn" [ngClass]="{'active': this.context!.toString() == 'service'}" (click)="this.getService()">Service</button>
+    <button type="button" class="btn" [ngClass]="{'active': this.context!.toString() == 'attaque'}" (click)="this.getAttaque()">Attaque</button>
+    <button type="button" class="btn" [ngClass]="{'active': this.context!.toString() == 'defence'}" (click)="this.getDefense()">Defense</button>
+</div>
+<app-terrain-list [systeme]="systeme" ></app-terrain-list>

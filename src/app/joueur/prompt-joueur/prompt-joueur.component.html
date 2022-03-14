@@ -1,0 +1,13 @@
+<p>{{ poste.posteName }}</p>
+<p>{{ poste.equipe }}</p>
+<div class="avant-modif">
+  <button (click)="this.setAvant()">
+    Avant
+  </button>
+  <button (click)="this.setArriere()">
+    Arrière
+  </button>
+</div>
+<p>{{ poste.avant }}</p>
+<button (click)="this.close()">Fermer</button>
+

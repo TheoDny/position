@@ -1,0 +1,34 @@
+#classement{
+  padding-bottom: 10px;
+}
+
+@media (max-width:500px){
+  #jounrees{
+    font-size:13px;
+    margin: auto;
+  }
+  #classement{
+    font-size:12px;
+    margin: auto;
+  }
+}
+
+@media (max-width:400px){
+  #jounrees{
+    font-size:11px;
+  }
+  #classement{
+    font-size:10px;
+  }
+}
+
+@media (max-width:350px){
+  #jounrees{
+    font-size:10px;
+  }
+  #classement{
+    font-size:9px;
+  }
+}
+
+

@@ -1,0 +1,44 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+  background : url("https://firebasestorage.googleapis.com/v0/b/volley-position.appspot.com/o/background-black.png?alt=media&token=dce66ee7-1127-435b-9c4e-8e8eebe202ed")
+}
+html, body {
+  margin: 0;
+  height: 100%;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.disableSelection{
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: 0;
+}
+.r4 , .central , .passeur , .pointu , .libero{
+  color: #fff;
+  font-weight: bold;
+}
+
+.r4{
+  background-color: red;
+}
+.central{
+  background-color: brown
+}
+
+.passeur{
+  background-color: darkblue
+}
+
+.pointu{
+  background-color: blue
+}
+.libero {
+  background-color: green
+}
+.attaque {
+  background-color: darkgoldenrod
+}

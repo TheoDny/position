@@ -1,0 +1,22 @@
+#login{
+  background: rgba(255, 255, 255, 0.055);
+  color: rgba(255, 255, 255);
+  margin: 30px;
+  max-width :500px;
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  label{
+    margin: 10px;
+    text-decoration: underline;
+  }
+  button{
+    margin: 10px;
+  }
+  h2{
+    font-weight: bold;
+    margin-top: 5px;
+  }
+
+}

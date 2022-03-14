@@ -1,0 +1,17 @@
+<div (click)="lockUnlock($event)" id="lock">Unlock</div>
+<div id="terrain" class="terrain-boundary">
+  <app-joueur *ngFor="let joueur of position;let index = index"
+                [poste]="joueur"
+                [id]="'joueur'+index"
+                [ngClass]="['joueur','box-joueur','disableSelection',joueur.posteName]"
+                cdkDragBoundary=".terrain-boundary"
+                cdkDrag
+
+                (cdkDragEnded)="this.onDragEnded($event)"
+                [cdkDragDisabled]="this.lockPosition"
+                [ngStyle]="{'transform': 'translate3d('+joueur.x*this.scale+'px, '+joueur.y*this.scale+'px, 0px)'}">
+
+  </app-joueur>
+</div>
+
+

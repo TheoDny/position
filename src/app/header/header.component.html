@@ -1,0 +1,29 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav navbar-left">
+      <li class="nav nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="view/systeme">Systeme</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="view/position">Position</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="calendar/events">Match à venir</a>
+      </li>
+      <li class="nav nav-item">
+        <a class="nav-link" routerLinkActive="active" routerLink="resultat">Resultat</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li class="nav nav-item" *ngIf="this.isAuth">
+        <a class="nav-link" routerLinkActive="active" routerLink="modif">Ajout / Modification</a>
+      </li>
+      <li class="nav nav-item" *ngIf="!this.isAuth">
+        <a class="nav-link" routerLinkActive="active" routerLink="auth/login">Se connecter</a>
+      </li>
+      <li class="nav nav-item" *ngIf="this.isAuth">
+        <a class="nav-link" (click)="this.signOut()">se déconnecter</a>
+      </li>
+    </ul>
+  </div>
+</nav>

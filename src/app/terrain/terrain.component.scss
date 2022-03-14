@@ -1,0 +1,32 @@
+:host {
+   //1,3359
+
+    bottom: 100px;
+    background-size: cover;
+    width: 600px;
+    background-image : url('https://firebasestorage.googleapis.com/v0/b/volley-position.appspot.com/o/terrain-volley-shema%20-%20Copie.png?alt=media&token=ca398c47-02d0-4892-9cd4-04bc1001011a')
+}
+
+.terrain-boundary {
+  //margin: 0.5%;
+  width :100%;
+  height : 100%;
+}
+
+#lock{
+  position: relative;
+  top: 3px;
+  right: 3px;
+  float: right;
+  width: 70px;
+  text-align: center;
+  color : #000;
+  font-weight: bold;
+  background-color: lightgray;
+  border-radius:30%;
+  border: 4px solid ;
+  &:hover{
+    border-color: #ccc;
+  }
+}
+

@@ -1,0 +1,10 @@
+<div [ngClass]="['div-joueur']">
+  <div class="avant-icon" *ngIf="this.poste.avant">
+
+  </div>
+  <p>{{ poste.posteName }}</p>
+</div>
+<app-prompt-joueur *ngIf="this.showPrompt"
+        [poste]="this.poste"
+        [(showPrompt)]="this.showPrompt">
+</app-prompt-joueur>

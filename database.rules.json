@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "classique" : {
+      ".read": true,
+    	".write" : "root.child('users').child(auth.uid).val() == 'owner'"
+    },
+    "users": {
+      ".read": false,
+        ".write": "root.child('users').child(auth.uid).val() == 'owner'",
+      "$uid" : {
+        ".read": "$uid === auth.uid"
+      }
+    }
+  }
+}
